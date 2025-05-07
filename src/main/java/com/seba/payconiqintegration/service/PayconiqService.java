@@ -35,7 +35,6 @@ public class PayconiqService implements IPayconiqService {
 
     @Override
     public Mono<PayconiqPaymentResponse> createPayment(PayconiqPaymentRequest paymentRequest) {
-        // S'assurer que le callbackUrl est défini
         if (paymentRequest.getCallbackUrl() == null) {
             paymentRequest.setCallbackUrl(callbackUrl);
         }
