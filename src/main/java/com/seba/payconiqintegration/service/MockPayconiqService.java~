@@ -1,0 +1,4 @@
+package com.seba.payconiqintegration.service;
+
+public class MockPayconiqService {
+}
